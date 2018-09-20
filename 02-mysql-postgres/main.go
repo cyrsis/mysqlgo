@@ -3,11 +3,10 @@ package main
 import (
 	"database/sql"
 	"fmt"
-
 	dbu "./dbutil"
 	_ "github.com/go-sql-driver/mysql" // $ go get github.com/go-sql-driver/mysql
 	// **added for PostgreSQL**
-	_ "github.com/lib/pq" // $ go get github.com/lib/pq
+	_ "github.com/lib/pq" // $ go get -u github.com/lib/pq
 )
 
 var db *sql.DB
